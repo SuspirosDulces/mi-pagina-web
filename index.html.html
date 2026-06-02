@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda de Postres Dulce Tentación</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#fff7f2;
+      color:#333;
+    }
+
+    header{
+      background:#ff7aa2;
+      color:white;
+      text-align:center;
+      padding:30px;
+    }
+
+    header h1{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:18px;
+    }
+
+    .contenedor{
+      width:90%;
+      max-width:1200px;
+      margin:40px auto;
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .info{
+      padding:20px;
+      text-align:center;
+    }
+
+    .info h2{
+      margin-bottom:10px;
+      color:#ff4f81;
+    }
+
+    .precio{
+      font-size:24px;
+      font-weight:bold;
+      margin:15px 0;
+      color:#444;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:10px 20px;
+      background:#ff7aa2;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#ff4f81;
+    }
+
+    footer{
+      margin-top:40px;
+      background:#333;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🍰 Dulce Tentación</h1>
+    <p>Los mejores postres para alegrar tu día</p>
+  </header>
+
+  <section class="contenedor">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Pastel Chocolate">
+      <div class="info">
+        <h2>Pastel de Chocolate</h2>
+        <p>Delicioso pastel con cobertura cremosa.</p>
+        <div class="precio">$250 MXN</div>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Cupcakes">
+      <div class="info">
+        <h2>Cupcakes</h2>
+        <p>Paquete de cupcakes decorados.</p>
+        <div class="precio">$120 MXN</div>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e" alt="Cheesecake">
+      <div class="info">
+        <h2>Cheesecake</h2>
+        <p>Cheesecake cremoso con frutos rojos.</p>
+        <div class="precio">$180 MXN</div>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff" alt="Donas">
+      <div class="info">
+        <h2>Donas Glaseadas</h2>
+        <p>Donas suaves con glaseado dulce.</p>
+        <div class="precio">$90 MXN</div>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Dulce Tentación | Tienda de Postres</p>
+  </footer>
+
+</body>
+</html>
